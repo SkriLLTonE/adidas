@@ -128,4 +128,7 @@ input.form__text::placeholder {
         transform: rotate(-180deg);
     }
 
+    input.form__text {
+        width: 290px;
+    }
 }
