@@ -74,3 +74,58 @@ input.form__text::placeholder {
     color: var(--b);
     border: 1px solid black;
 }
+
+.header__btn {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    transition: 0.3s;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .header__wrap {
+        flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__btn {
+        display: inline-block;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: 0px;
+        overflow: hidden;
+        gap: 10px;
+        transition: 0.3s;
+    }
+
+    .menu.active {
+        height: 97px;
+    }
+
+    .menu__link {
+        padding: 0px;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .menu__link.active {
+        border: none;
+    }
+
+    .header__btn.active {
+        transform: rotate(-180deg);
+    }
+
+}

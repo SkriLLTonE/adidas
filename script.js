@@ -9,3 +9,11 @@ for (let i = 0; i < links.length; i++) {
         this.classList.add('active')
     })
 }
+
+const burger = document.querySelector('.header__btn')
+const menu = document.querySelector('.menu')
+
+burger.addEventListener('click', function () {
+    this.classList.toggle('active')
+    menu.classList.toggle('active')
+})
