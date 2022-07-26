@@ -1,0 +1,76 @@
+.header {
+    background: white;
+    padding: 0 30px;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 11px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__link {
+    padding: 31px 15px 26px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    color: black;
+    transition: 0.4s;
+    user-select: none;
+}
+
+
+.menu__link.active {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+input.form__text {
+    border-right: none;
+    outline: none;
+    padding: 8px 11px 9px;
+    border-radius: 10px;
+    font-family: var(--RR);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    border: 1px solid #000000;
+    width: 290px;
+}
+
+
+input.form__text::placeholder {
+    color: black;
+    font-family: var(--RR);
+
+}
+
+.form__submit {
+    background: black;
+    padding: 8px 18px;
+    color: var(--wh);
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.3s;
+}
+
+.form__submit:hover {
+    background: white;
+    color: var(--b);
+    border: 1px solid black;
+}

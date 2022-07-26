@@ -1,0 +1,30 @@
+.banner {
+    background: url(../img/bg.png) no-repeat center/cover;
+    height: 100vh;
+}
+
+.banner__wrap {
+    display: flex;
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.banner__txt-h {
+    font-family: var(--RS);
+    font-size: 59px;
+    font-weight: 600;
+    line-height: 70px;
+    margin: 20px 0 10px;
+}
+
+.banner__txt-p {
+    font-family: var(--RL);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31px;
+    text-transform: uppercase;
+}
