@@ -1,6 +1,7 @@
 .cards__wrap {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -24,4 +25,16 @@ a.card__body {
 
 .card:hover {
     background: #6B4B6B;
+}
+
+@media screen and (max-width:991px) {
+    .card {
+        flex: 0 0 50%
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card {
+        flex: 0 0 100%
+    }
 }

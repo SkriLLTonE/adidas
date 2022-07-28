@@ -22,3 +22,15 @@
     line-height: 18px;
     color: var(--b);
 }
+
+@media screen and (max-width:768px) {
+    .list__item {
+        flex: 0 0 33%
+    }
+}
+
+@media screen and (max-width:540px) {
+    .list__item {
+        flex: 0 0 50%
+    }
+}
